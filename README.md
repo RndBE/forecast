@@ -26,5 +26,3 @@ Sistem ini memanfaatkan model pembelajaran mesin (ML) berbasis time-series untuk
   Menggunakan metode statistik (threshold, rolling window) maupun AI (Isolation Forest, clustering).
 
 ---
-
-## Struktur Proyek
