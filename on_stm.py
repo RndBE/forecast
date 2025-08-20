@@ -31,7 +31,7 @@ warnings.filterwarnings('ignore')
 # ======== KONFIGURASI GLOBAL ========
 # --- Forecast (TCN) ---
 ONNX_PATH   = os.environ.get("ONNX_PATH", "tcn_mimo_2.onnx")
-IN_WIN      = int(os.environ.get("IN_WIN", 180))
+IN_WIN      = int(os.environ.get("IN_WIN", 60))
 OUT_WIN     = int(os.environ.get("OUT_WIN", 60))
 BASE_COLS   = ("sensor1", "sensor2")  # kolom input dasar
 SCALER_MU   = os.environ.get("SCALER_MU", "mu.npy")   # shape (C_in,)
@@ -322,4 +322,5 @@ if __name__ == "__main__":
     host = os.environ.get("HOST", "0.0.0.0")
     port = int(os.environ.get("PORT", 5000))
     app.run(host=host, port=port, debug=False)
+
 
